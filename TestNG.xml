@@ -11,5 +11,9 @@
 			<class name="com.simplilearn.ecom.facebook.FacebookLoginTest"></class>
 		</classes>
 	</test>
-
+	<test name="Group Test">
+		<classes>
+			<class name="com.simplilearn.ecom.group.BrowserSpecificGroupTest"></class>
+		</classes>
+	</test>
 </suite>

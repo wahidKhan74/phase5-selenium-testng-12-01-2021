@@ -3,13 +3,14 @@
 <suite name="Failed suite [EcomWebapp Test Suite]">
   <test thread-count="5" name="Amazon Test(failed)">
     <classes>
-      <class name="com.simplilearn.ecom.amazon.AmazonHomepageTest">
+      <class name="com.simplilearn.ecom.amazon.AmazonNavLinkTest">
         <methods>
+          <include name="beforeMethod"/>
           <include name="testAmazonMobileLink"/>
           <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="testAmazonElectronicLink"/>
         </methods>
-      </class> <!-- com.simplilearn.ecom.amazon.AmazonHomepageTest -->
+      </class> <!-- com.simplilearn.ecom.amazon.AmazonNavLinkTest -->
     </classes>
   </test> <!-- Amazon Test(failed) -->
 </suite> <!-- Failed suite [EcomWebapp Test Suite] -->
