@@ -1,73 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+  <suite name="Default suite" duration-ms="29528" started-at="2021-12-01T11:32:06 UTC" finished-at="2021-12-01T11:32:35 UTC">
     <groups>
+      <group name="ChromeOnly">
+        <method signature="BrowserSpecificGroupTest.lauchChromeTest()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="lauchChromeTest" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.closeChromeBrowser()[pri:3, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="closeChromeBrowser" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.testAmazonHomepage()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testAmazonHomepage" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.testAmazonSearch()[pri:2, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testAmazonSearch" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.testHompageSourceUrl()[pri:1, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testHompageSourceUrl" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+      </group> <!-- ChromeOnly -->
+      <group name="FirefoxOnly">
+        <method signature="BrowserSpecificGroupTest.lauchFirefoxTest()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="lauchFirefoxTest" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.closeFirefox()[pri:3, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="closeFirefox" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.testFacebookFailureLogin()[pri:2, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testFacebookFailureLogin" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.testFacebookHomepage()[pri:1, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testFacebookHomepage" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+        <method signature="BrowserSpecificGroupTest.testFacebookTitle()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testFacebookTitle" class="com.simplilearn.ecom.group.BrowserSpecificGroupTest"/>
+      </group> <!-- FirefoxOnly -->
     </groups>
-    <test name="Default test" duration-ms="49" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
-      <class name="com.simplilearn.ecom.amazon.StandardAnnotationTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+    <test name="Default test" duration-ms="29528" started-at="2021-12-01T11:32:06 UTC" finished-at="2021-12-01T11:32:35 UTC">
+      <class name="com.simplilearn.ecom.group.BrowserSpecificGroupTest">
+        <test-method status="PASS" signature="lauchChromeTest()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="lauchChromeTest" duration-ms="3730" started-at="2021-12-01T11:32:06 UTC" finished-at="2021-12-01T11:32:09 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- lauchChromeTest -->
+        <test-method status="PASS" signature="lauchFirefoxTest()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="lauchFirefoxTest" duration-ms="6088" started-at="2021-12-01T11:32:09 UTC" finished-at="2021-12-01T11:32:16 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- lauchFirefoxTest -->
+        <test-method status="PASS" signature="testAmazonHomepage()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testAmazonHomepage" duration-ms="20" started-at="2021-12-01T11:32:16 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchChromeTest" finished-at="2021-12-01T11:32:16 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- testAmazonHomepage -->
+        <test-method status="PASS" signature="testFacebookTitle()[pri:0, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testFacebookTitle" duration-ms="11" started-at="2021-12-01T11:32:16 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchFirefoxTest" finished-at="2021-12-01T11:32:16 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="testOne" duration-ms="7" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- testFacebookTitle -->
+        <test-method status="PASS" signature="testFacebookHomepage()[pri:1, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testFacebookHomepage" duration-ms="160" started-at="2021-12-01T11:32:16 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchFirefoxTest" finished-at="2021-12-01T11:32:16 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- testFacebookHomepage -->
+        <test-method status="PASS" signature="testHompageSourceUrl()[pri:1, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testHompageSourceUrl" duration-ms="11" started-at="2021-12-01T11:32:16 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchChromeTest" finished-at="2021-12-01T11:32:16 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- testHompageSourceUrl -->
+        <test-method status="PASS" signature="testAmazonSearch()[pri:2, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testAmazonSearch" duration-ms="4100" started-at="2021-12-01T11:32:16 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchChromeTest" finished-at="2021-12-01T11:32:20 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testThree()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="testThree" duration-ms="1" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- testAmazonSearch -->
+        <test-method status="PASS" signature="testFacebookFailureLogin()[pri:2, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="testFacebookFailureLogin" duration-ms="13515" started-at="2021-12-01T11:32:20 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchFirefoxTest" finished-at="2021-12-01T11:32:33 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- testFacebookFailureLogin -->
+        <test-method status="PASS" signature="closeChromeBrowser()[pri:3, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="closeChromeBrowser" duration-ms="191" started-at="2021-12-01T11:32:33 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchChromeTest" finished-at="2021-12-01T11:32:34 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
+        </test-method> <!-- closeChromeBrowser -->
+        <test-method status="PASS" signature="closeFirefox()[pri:3, instance:com.simplilearn.ecom.group.BrowserSpecificGroupTest@6043cd28]" name="closeFirefox" duration-ms="1608" started-at="2021-12-01T11:32:34 UTC" depends-on-methods="com.simplilearn.ecom.group.BrowserSpecificGroupTest.lauchFirefoxTest" finished-at="2021-12-01T11:32:35 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testTwo()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="testTwo" duration-ms="1" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTwo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.simplilearn.ecom.amazon.StandardAnnotationTest@7cbd213e]" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-12-01T10:01:10 UTC" finished-at="2021-12-01T10:01:10 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.simplilearn.ecom.amazon.StandardAnnotationTest -->
+        </test-method> <!-- closeFirefox -->
+      </class> <!-- com.simplilearn.ecom.group.BrowserSpecificGroupTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
